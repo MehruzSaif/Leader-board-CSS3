@@ -130,29 +130,23 @@ hr{
 
 /* --------Media Queries-------- */
 
-@media only screen and (max-width: 688px) {
-    .container{
-        width: 100%;
-    }
-    .players, .blogs, .courses {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .players, .blogs, .courses{
-        flex-direction: column;
-    }
+@media (max-width:688px){
+    .navigation-items li{
+    padding:0 10px;
 }
-
-/* --------Tablet Devices---------- */
-
-@media  only screen and (min-width: 688px) and (max-width: 992px) {
-
-    .container{
-        width: 100%;
+    #top_section .container{
+        padding: 20px;
     }
-    .players {
-        grid-template-columns: repeat(2, 1fr);
+    .player-content{
+        grid-template-columns: repeat(2,1fr);
     }
-    .players, .courses {
-        grid-template-columns: repeat(2, 1fr);
+    .blog-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #latest_course .container{
+        padding:20px;
     }
 }
